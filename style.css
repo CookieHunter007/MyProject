@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(90deg, rgba(44, 22, 33), rgb(221, 221, 221));
+}
+/*Aca empieza todo el header*/
+.container {
+  background: linear-gradient(90deg, rgba(44, 22, 33), rgba(22, 33, 44));
+  height: 180px;
+  border: 2px solid black;
+}
+.lista-link {
+  display: flex;
+  margin: 0 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.lista-item {
+  margin: 0 70px;
+  font-size: 20px;
+  padding: 75px 0 0 0;
+}
+.lista-item-logo {
+  margin: 0 10px;
+  padding: 5px;
+  transform: rotate(10deg);
+}
+a {
+  color: rgb(206, 205, 205);
+}
+#logo {
+  padding: 5px;
+  width: 150px;
+}
+.lista-item-mas {
+  min-height: 100px;
+  min-width: none;
+}
+#header-mas {
+  transition-duration: 1s;
+  height: 200px;
+}
+#header-mas:hover {
+  height: 200px;
+  width: 100px;
+  color: red;
+}
+/*Aca termina la barra de navegacion*/
+/*Index*/
+.section-container {
+  background: linear-gradient(90deg, rgba(44, 22, 33), rgb(221, 221, 221));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 5px 10px 5px 10px;
+}
+#titulo-index {
+  color: black;
+  align-self: center;
+  font-size: 30px;
+}
+.imagen-index{
+  
+}
+#imagen-A {
+  border: 2px solid black;
+  transform: rotate(3deg);
+}
+.imagen-parrafo {
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  margin: 30px;
+}
+/*Index*/
+/*Empieza "peliculas"*/
+#pel-titulo {
+  margin: 0 550px 0 550px;
+  font-size: 40px;
+}
+.container-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.aside-pel {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  justify-content: flex-start;
+  align-content: center;
+  width: 110px;
+  margin: 0 10px 0 0;
+  padding: 2px 0 0 4px;
+}
+.item-pel {
+  color: black;
+  font-size: 15px;
+  margin: 5px 0 0 0;
+}
+.item-pel-aplicar {
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin: 0 55px;
+}
+.sec-p {
+  background-color: blue;
+  width: 1133px;
+}
+.peliculas-lista {
+  width: 369px;
+  height: 350px;
+  margin: 5px 0 0 2px;
+}
+/*Termina "peliculas"*/
+/*Empieza "Contactanos"*/
+.texto-cont {
+  color: white;
+  position: absolute;
+  margin: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.contactanos {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+#imagen-contacto {
+  width: 100%;
+}
+.texto-medio-abajo {
+  margin-left: 30px;
+}
+.texto-medio-arriba {
+  margin-left: 230px;
+}
+.formulario {
+  width: 1240px;
+  background-color: gray;
+}
+/*Termina contactos*/
+/*empieza "series*/
+.container-series {
+  background: linear-gradient(90deg, rgba(44, 22, 33), rgb(221, 221, 221));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.titulo-serie {
+  transform: translate(160px, 0);
+  font-size: 23px;
+}
+.img-series {
+  width: 400px;
+  height: 600px;
+}
+/*Termina series*/
+/*Empieza mas*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  grid-auto-rows: auto;
+  grid-template-areas: "img1 img1 img1";
+  padding: 10px;
+}
+.grid-galeria-1 {
+  grid-area: img1;
+}
+.grid-galeria {
+  color: white;
+  width: 100%;
+  background-color: green;
+  border: 2px solid black;
+}
+.grid-galeria:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/*Termina "mas"*/
+/*empieza "faq*/
+.container-faq {
+  background: linear-gradient(90deg, rgb(44, 22, 23), rgb(221, 221, 221));
+  display: flex;
+  flex-direction: column;
+}
+#titulo-faq {
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+}
+.faq-q {
+  background: linear-gradient(90deg, rgb(44, 22, 23), rgb(221, 221, 221));
+  color: rgb(255, 255, 255);
+}
+.faq-a {
+  color: wheat;
+}
+/*Footer*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(44, 44, 44);
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+.redes-container {
+  display: flex;
+  margin: 0 800px;
+}
+.redes {
+  margin: 0 15px;
+  padding: 8px 15px;
+}
+#p-img {
+  color: rgb(138, 137, 137);
+}
+/*Footer*/
