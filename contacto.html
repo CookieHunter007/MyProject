@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Contacto</title>
   </head>
   <body>
     <header>
     </a>
-    <nav class="container">
-            <!--Acá ira una imagen enlazada a un link-->
-        <ul class="lista-link">
-          <li class="lista-item lista-item-logo"><a href="index.html">
-            <img
-              src="IMG/pngwing.com.png"
-              alt="LOGO"
-              width="150px"
-              height="150px"
-              id="logo"
-            />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navTodos">
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMG/pngwing.com.png" alt="Home" width="100px" height="100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="series.html"
+               style="font-size: 18px;">Series <span class="sr-only"></span
+            ></a>
           </li>
-      <li class="lista-item"><a href="peliculas.html">Peliculas</a></li>
-      <li class="lista-item"><a href="series.html">Series</a></li>
-      <li class="lista-item"><a href="contacto.html">Contacto</a></li>
-      <li class="lista-item"><a href="faq.html">FAQ</a></li>
-      <li class="lista-item"><a href="mas.html">Más</a></li>
-    </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="peliculas.html"
+            style="font-size: 18px;">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html" style="font-size: 18px;">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html" style="font-size: 18px;">FAQ</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
     <div class="contactanos">
@@ -44,51 +61,46 @@
           Si tienes algun problema, duda o sugerencia no dudes en contactarnos
         </h3>
         </div>
-    </div>
-    <form action="" class="formulario">
-      <fieldset class="formulario-fieldset">
-        <legend>Contacto</legend>
+    </div> 
+    <article style="margin: 50px 100px">   
+      <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1" style="color:white">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Nombre"
+            />
+        <div class="form-group">
+          <label for="exampleFormControlInput1" style="color:white" >Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <label for="exampleFormControlSelect1" style="color:white">Sexo</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>M</option>
+            <option>F</option>
+          </select>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1" style="color:white">Example textarea</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+          <button type="submit" class="btn btn-dark mb-2">Submit</button>
+        </div>
+      </form>
+    </article>
 
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" />
-        <br />
-        <label for="apellido">Apellido</label>
-        <input
-          type="text"
-          id="apellido"
-          name="apellido"
-          placeholder="Tu apellido"
-        />
-        <br />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          placeholder="Ingresa tu email"
-          id="email"
-          name="email"
-        />
-        <br>
-        <label for="selecciona">Sexo</label>
-        <Select id="selecciona" name="selecciona">
-          <option value="Hombre">H</option>
-          <option value="Mujer">M</option>
-        </Select>
-        <br />
-        <label for="mensaje">Mensaje</label>
-        <br />
-        <textarea
-          name="mensaje"
-          id="mensaje"
-          cols="30"
-          rows="10"
-          placeholder="Escriba su mensaje"
-        ></textarea>
-        <br />
-        <input type="submit" id="submit" name="submit" />
-        <input type="reset" id="reset" name="reset"/>
-      </fieldset>
-    </form>
-    <section id="prueba"></section>
+
+
+
     <footer class="footer-container">
         <!--Ademas del copy tambien colocare las redes sociales-->
         <p id="p-img">©Todos los derechos reservados</p>
@@ -109,5 +121,6 @@
         /></a>
       </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
