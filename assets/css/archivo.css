@@ -14,13 +14,10 @@ body {
 }
 /*Aca termina la barra de navegacion*/
 /*Index*/
-#estrenos img {
-  width: 100%;
-  height: 100%;
-}
-.carousel {
-  width: 500px;
-  height: 741px;
+#mih1 {
+  color: black;
+  font-size: 4rem;
+  font-family: sans-serif;
 }
 /*Index*/
 /*Empieza "peliculas"*/
