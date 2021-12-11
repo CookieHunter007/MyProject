@@ -6,42 +6,45 @@
 }
 body {
   background: linear-gradient(90deg, rgba(44, 22, 33), rgb(221, 221, 221));
+  font-size: 16px;
 }
 /*Aca empieza todo el header*/
 #navTodos {
   background: linear-gradient(90deg, rgba(44, 22, 33), rgba(22, 33, 44));
-  height: 150px;
+  height: 9.375em;
 }
 /*Aca termina la barra de navegacion*/
 /*Index*/
 #mih1 {
   color: black;
-  font-size: 4rem;
+  font-size: 4em;
   font-family: sans-serif;
 }
 /*Index*/
 /*Empieza "peliculas"*/
 #galeria img {
   width: 100%;
-  height: 500px;
-  margin: 5px 0 5px 0;
+  height: 31.25em;
+  margin: 0.3125em 0 0.3125em 0;
 }
 #titulos-peli {
-  font-size: 30px;
+  font-size: 1.875em;
 }
 /*Termina "peliculas"*/
 /*Empieza "Contactanos"*/
 .texto-cont {
-  color: white;
-  position: absolute;
-  margin: 200px;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-content: center;
+  color: white;
+  position: absolute;
+  align-items: center;
 }
 .contactanos {
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -49,12 +52,13 @@ body {
 }
 #imagen-contacto {
   width: 100%;
+  height: 20em;
 }
 .texto-medio-abajo {
-  margin-left: 30px;
+  align-items: center;
 }
 .texto-medio-arriba {
-  margin-left: 230px;
+  align-items: center;
 }
 /*Termina contactos*/
 /*empieza "series*/
@@ -69,7 +73,7 @@ body {
 #titulo-faq {
   justify-self: center;
   align-self: center;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 .faq-q {
   background: linear-gradient(90deg, rgb(44, 22, 23), rgb(221, 221, 221));
@@ -82,17 +86,21 @@ body {
 .footer-container {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 3em;
   background-color: rgb(44, 44, 44);
-  flex-wrap: wrap;
-  min-height: 100px;
 }
 .redes-container {
+  direction: rtl;
   display: flex;
-  margin: 0 800px;
+  justify-content: flex-start;
 }
 .redes {
-  margin: 0 15px;
-  padding: 8px 15px;
+  margin: auto;
+}
+.redes-img {
+  width: 2.75em;
+  height: 2.75em;
 }
 #p-img {
   color: rgb(138, 137, 137);
